@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.getcaconference"
+    android:versionCode="17"
+    android:versionName="5.93" >
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="26" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.getcaconference.ConferenceApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/GETCAConference"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.getcaconference.SearchSessionsActivity"
+            android:label="@string/GETCA"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.getcaconference.ConferenceDataProvider"
+            android:authorities="com.getcaconference.ConferenceDataProvider" >
+        </provider>
+
+        <activity
+            android:name="com.getcaconference.KeynotesActivity"
+            android:label="@string/Keynotes"
+            android:logo="@drawable/ic_action_keynote"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name="com.getcaconference.SessionsActivity"
+            android:label="@string/Sessions"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name="com.getcaconference.FeedbackActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/Feedback"
+            android:noHistory="true"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name="com.getcaconference.SessionActivity"
+            android:label="@string/Session" >
+        </activity>
+        <activity
+            android:name="com.getcaconference.KeynoteActivity"
+            android:label="@string/Keynote"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name="com.getcaconference.FAQActivity"
+            android:label="@string/title_activity_faq"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name="com.getcaconference.MessageActivity"
+            android:label="@string/title_activity_message"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" />
+        <meta-data
+            android:name="android.arch.lifecycle.VERSION"
+            android:value="27.0.0-SNAPSHOT" />
+    </application>
+
+</manifest>

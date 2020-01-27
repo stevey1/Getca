@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:uiOptions="splitActionBarWhenNarrow"
+    tools:context=".SearchSessionsActivity" >
+
+    <TextView
+        android:id="@+id/textSessionSpeaker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editKeyword"
+        android:text="@string/Grade" 
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/textTrack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinnerGrade"
+        android:layout_below="@+id/spinnerGrade"
+        android:text="@string/Subject"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/spinnerSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textTrack"
+        android:layout_below="@+id/textTrack" />
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinnerSubject"
+        android:layout_below="@+id/spinnerSubject"
+        android:text="@string/Timeslot" 
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <Spinner
+        android:id="@+id/spinnerGrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textSessionSpeaker"
+        android:layout_below="@+id/textSessionSpeaker" />
+
+    <Spinner
+        android:id="@+id/spinnerTimeslot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editKeyword"
+        android:layout_below="@+id/textTime" 
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+
+    <EditText
+        android:id="@+id/editKeyword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textSessionSpeaker"
+        android:layout_alignParentTop="true"
+        android:drawableLeft="@drawable/ic_action_search_icon"
+        android:ems="10"
+        android:hint="@string/KeywordSearch"
+        android:lines="1"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/spinnerTimeslot"
+        android:layout_below="@+id/spinnerTimeslot"
+        android:onClick="SearchClicked"
+        android:text="@string/Search"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/buttonDownloadPDF"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="DownloadPDFClicked"
+        android:text="@string/downloadPDF"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="DownloadInitialDataClicked"
+        android:text="@string/downloadIniData"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/buttonSearch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

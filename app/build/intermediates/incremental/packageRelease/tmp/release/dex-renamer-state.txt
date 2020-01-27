@@ -1,0 +1,4 @@
+#Tue Feb 05 22:42:57 MST 2019
+base.0=/Users/fengsenyang/AndroidStudioProjects/GetcaConference/app/build/intermediates/dex/release/mergeDexRelease/out
+path.0=classes.dex
+renamed.0=classes.dex

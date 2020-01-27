@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/item_search_sessions" android:showAsAction="ifRoom|withText" android:title="@string/Search" android:icon="@drawable/ic_action_search" android:titleCondensed="S"/>
+    <item android:id="@+id/item_keynotes" android:showAsAction="always|withText" android:title="@string/Keynotes" android:icon="@drawable/ic_action_keynote" android:titleCondensed="K"/>
+    <item android:id="@+id/item_favorites" android:showAsAction="ifRoom|withText" android:title="@string/FavoriteSessions" android:icon="@drawable/ic_action_favorite" android:alphabeticShortcut="F" android:titleCondensed="F"/>
+  	 <item
+       android:id="@+id/item_PresidentMessage"
+       android:orderInCategory="100"
+       android:showAsAction="ifRoom|withText"
+       android:title="@string/PresidentMessage" android:icon="@drawable/ic_action_message" android:titleCondensed="O" android:alphabeticShortcut="O"/>
+      	 <item
+       android:id="@+id/item_FAQ"
+       android:orderInCategory="100"
+       android:showAsAction="ifRoom|withText"
+       android:title="@string/FAQ" android:icon="@drawable/ic_action_faq" android:titleCondensed="O" android:alphabeticShortcut="O"/>
+
+</menu>
