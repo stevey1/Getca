@@ -1,7 +1,0 @@
-#Internal package file, do not edit.
-#Fri Feb 01 12:11:04 MST 2019
-0.baseType=DIRECTORY
-0.base=/Users/fengsenyang/AndroidStudioProjects/GetcaConference/app/build/intermediates/dex/release/mergeDexRelease/out
-0.path=classes.dex
-0.set=DEX
-count=1
